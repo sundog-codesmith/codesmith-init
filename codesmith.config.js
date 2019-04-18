@@ -2,8 +2,8 @@
 const path = require('path');
 
 module.exports = function (codesmith) {
-    codesmith.setGenerator('service', {
-        description: 'create new service for ddd',
+    codesmith.setGenerator('new-package', {
+        description: 'create codesmith package',
         questions: [
             {
                 type: 'input',
