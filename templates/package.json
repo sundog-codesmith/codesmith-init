@@ -1,0 +1,24 @@
+{
+    "name": "@codestore/{{packageName}}",
+    "version": "1.0.0",
+    "description": "",
+    "main": "codesmith.config.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    {{#if (eq platform 'github')}}
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/{{githubPath}}.git"
+    },
+    {{/if}}
+    "author": "",
+    "license": "ISC",
+    {{#if (eq platform 'github')}}
+    "bugs": {
+      "url": "https://github.com/{{githubPath}}/issues"
+    },
+    "homepage": "https://github.com/{{githubPath}}#readme"
+    {{/if}}
+  }
+  
